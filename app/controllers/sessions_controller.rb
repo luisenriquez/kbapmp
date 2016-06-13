@@ -1,6 +1,11 @@
 class SessionsController < ApplicationController
-  def new
+ 
+ def new
   end
+
+def index
+@question_what = "What is your"
+end
 
 def create
     user = User.find_by(email: params[:session][:email].downcase, favorite_sport: params[:session][:favorite_sport] )

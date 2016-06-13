@@ -11,6 +11,9 @@ gem 'pg'
 # Add bcrypt
 gem 'bcrypt',     '3.1.7'
 
+# Add dynamic KBA
+gem 'kba_pmp',  '0.1.0'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
