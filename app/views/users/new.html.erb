@@ -12,13 +12,24 @@
       <%= f.label :email %>
       <%= f.email_field :email, class: 'form-control' %>
 
+<%= simple_question @question %>
 <%= f.label :date_of_birth %>
+<%= question_mark @mark%>
       <%= f.text_field :date_of_birth, class: 'form-control' %>
+
+<%= simple_question @question %>
 <%= f.label :place_of_birth %>
-      <%= f.text_field :place_of_birth, class: 'form-control' %>
+<%= question_mark @mark%> 
+     <%= f.text_field :place_of_birth, class: 'form-control' %>
+
+<%= simple_question @question %>
 <%= f.label :favorite_sport %>
+<%= question_mark @mark%>
       <%= f.text_field :favorite_sport, class: 'form-control' %>
+
+<%= simple_question @question %>
 <%= f.label :favorite_music %>
+<%= question_mark @mark%>
       <%= f.text_field :favorite_music, class: 'form-control' %>
 
       <%= f.label :password %>

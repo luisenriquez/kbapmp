@@ -11,11 +11,14 @@
       <%= f.label :password %>
       <%= f.password_field :password, class: 'form-control' %>
 
- 
+<%=simple_question @question%>
       <%= f.label :place_of_birth %>
+<%=question_mark @mark%>
       <%= f.text_field :place_of_birth, class: 'form-control' %>
-  
+
+ <%=simple_question @question%> 
   <%= f.label :favorite_sport %>
+<%=question_mark @mark%>
   <%= f.text_field :favorite_sport, class: 'form-control' %>
 
       <%= f.label :remember_me, class: "checkbox inline" do %>
