@@ -1,0 +1,26 @@
+<% provide(:title, "KBA ") %>
+<h1> KBA remote ID proofing</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(:session, url: kbalogin_path) do |f| %>
+
+
+<%=simple_question @question%>
+      <%= f.label :place_of_birth %>
+<%=question_mark @mark%>
+      <%= f.text_field :place_of_birth, class: 'form-control' %>
+
+ <%=simple_question @question%>
+  <%= f.label :favorite_sport %>
+<%=question_mark @mark%>
+  <%= f.text_field :favorite_sport, class: 'form-control' %>
+
+      
+      <%= f.submit "Log in", class: "btn btn-primary" %>
+    <% end %>
+
+    <p> This is a KBA sandbox </p>
+  </div>
+</div>
+

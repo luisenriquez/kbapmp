@@ -4,8 +4,15 @@ Rails.application.routes.draw do
 
  
 
+ 
+
   root 'static_pages#home'
+
+get 'kba2in' => 'kba#new'
+post 'kba2in' => 'kba#create'
+delete 'kba2out' => 'kba#destroy'
   
+
 get 'signup' => 'users#new'
 
 
