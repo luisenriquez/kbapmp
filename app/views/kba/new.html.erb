@@ -1,4 +1,5 @@
 <% provide(:title, "kba2login") %>
+
 <h1> KBA 2 LOG IN  </h1>
 
 <div class="row">
@@ -8,14 +9,15 @@
 
 
 <%=simple_question @question%>
-      <%= f.label :place_of_birth %>
+      <%= f.label direct_identificational_data @data %>
+
 <%=question_mark @mark%>
-      <%= f.text_field :place_of_birth, class: 'form-control' %>
+      <%= f.text_field  direct_identificational_data  @data %>
 
  <%=simple_question @question%>
-  <%= f.label :favorite_sport %>
+  <%= f.label indirect_identificational_data @data %>
 <%=question_mark @mark%>
-  <%= f.text_field :favorite_sport, class: 'form-control' %>
+  <%= f.text_field indirect_identificational_data @data  %>
 
 
       <%= f.submit "Log in", class: "btn btn-primary" %>

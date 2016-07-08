@@ -1,6 +1,27 @@
 module KbaHelper
+ def simple_question(question)
 
-# Logs in the given user.
+
+question = "What is your  "
+
+end
+
+def direct_identificational_data(data)
+pob = :place_of_birth
+dob = :date_of_birth
+data = [pob,dob].sample
+
+end
+
+
+
+def indirect_identificational_data(data)
+fs= :favorite_sport
+fm= :favorite_music
+data= [fs, fm].sample
+end
+
+# Login the given user.
   def log_in(user)
     session[:user_id] = user.id
   end

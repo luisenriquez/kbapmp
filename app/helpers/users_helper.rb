@@ -11,9 +11,37 @@ module UsersHelper
   end
 
 def simple_question(question)
+
+
 question = "What is your  "
 
 end
+
+def direct_identificational_data(data)
+pob = :place_of_birth
+dob = :date_of_birth
+data = [pob,dob].sample
+
+end
+
+
+
+def indirect_identificational_data(data)
+fs= :favorite_sport
+fm= :favorite_music
+data= [fs, fm].sample
+end
+
+def indirect_sub(sub)
+fs= :favorite_sport
+fm= :favorite_music
+
+if indirect_identificational_data @data = fs
+sub = fs
+elsif sub = fm
+end
+end
+
 
 def question_mark(mark)
 mark = "?"
